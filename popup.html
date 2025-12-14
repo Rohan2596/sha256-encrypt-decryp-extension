@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SHA-256 Tool</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>SHA-256 Encrypt / Compare</h2>
+
+    <label>Plain Text</label>
+    <textarea id="plainText" placeholder="Enter plain text..."></textarea>
+
+    <label>SHA-256 Hash</label>
+    <textarea id="hashText" placeholder="Enter hash to compare..."></textarea>
+
+    <div class="buttons">
+      <button id="encryptBtn">Encrypt</button>
+      <button id="compareBtn">Compare</button>
+    </div>
+
+    <label>Result</label>
+    <textarea id="outputText" readonly placeholder="Result will appear here..."></textarea>
+
+    <button id="copyBtn">Copy Result</button>
+  </div>
+
+  <script src="sha256.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
